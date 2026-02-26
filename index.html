@@ -1,17 +1,25 @@
 <!DOCTYPE html>
+
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#2d5a8e" />
+    <meta name="description" content="Mi Agenda Digital" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Mi Agenda" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Mi Agenda Digital</title>
     <style>
-      body { margin: 0; padding: 0; background-color: #fdfaf6; }
-      * { box-sizing: border-box; }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: 'Palatino Linotype', Palatino, 'Book Antiqua', serif; background: #eee9e1; }
+      ::-webkit-scrollbar { width: 3px; }
+      ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 2px; }
+      input:focus, textarea:focus, button:focus { outline: none; }
     </style>
   </head>
   <body>
-    <noscript>Necesitas activar JavaScript para usar esta agenda.</noscript>
     <div id="root"></div>
   </body>
 </html>
